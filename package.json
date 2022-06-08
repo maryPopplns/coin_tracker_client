@@ -1,5 +1,6 @@
 {
   "name": "coin_tracker_client",
+  "homepage": "https://marypopplns.github.io/coin_tracker_client/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
