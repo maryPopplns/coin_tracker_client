@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.abd64e84.css",
-    "main.js": "/static/js/main.b69beb15.js",
+    "main.css": "/static/css/main.659372f1.css",
+    "main.js": "/static/js/main.17b5b5fb.js",
     "static/js/787.81a31bec.chunk.js": "/static/js/787.81a31bec.chunk.js",
+    "static/media/Ethereum.png": "/static/media/Ethereum.7057384e355b84f000e0.png",
+    "static/media/Bitcoin.png": "/static/media/Bitcoin.c1b50f532c9a51e7f4ab.png",
+    "static/media/Dashboard.png": "/static/media/Dashboard.ac1fa4c86bb232851217.png",
+    "static/media/Roboto-Medium.ttf": "/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Roboto-Black.ttf": "/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
+    "static/media/Roboto-Light.ttf": "/static/media/Roboto-Light.333da16a3f3cc391d087.ttf",
+    "static/media/Brand-icon.png": "/static/media/Brand-icon.651547a97f4f41baf53a.png",
     "index.html": "/index.html",
-    "main.abd64e84.css.map": "/static/css/main.abd64e84.css.map",
-    "main.b69beb15.js.map": "/static/js/main.b69beb15.js.map",
+    "main.659372f1.css.map": "/static/css/main.659372f1.css.map",
+    "main.17b5b5fb.js.map": "/static/js/main.17b5b5fb.js.map",
     "787.81a31bec.chunk.js.map": "/static/js/787.81a31bec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abd64e84.css",
-    "static/js/main.b69beb15.js"
+    "static/css/main.659372f1.css",
+    "static/js/main.17b5b5fb.js"
   ]
 }
