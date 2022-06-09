@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/coin_tracker_client/static/css/main.318a425f.css",
-    "main.js": "/coin_tracker_client/static/js/main.84901af5.js",
+    "main.css": "/coin_tracker_client/static/css/main.7c26372e.css",
+    "main.js": "/coin_tracker_client/static/js/main.1c99019a.js",
     "static/js/787.81a31bec.chunk.js": "/coin_tracker_client/static/js/787.81a31bec.chunk.js",
     "static/media/Ethereum.png": "/coin_tracker_client/static/media/Ethereum.7057384e355b84f000e0.png",
     "static/media/Bitcoin.png": "/coin_tracker_client/static/media/Bitcoin.c1b50f532c9a51e7f4ab.png",
@@ -11,12 +11,12 @@
     "static/media/Roboto-Light.ttf": "/coin_tracker_client/static/media/Roboto-Light.333da16a3f3cc391d087.ttf",
     "static/media/Brand-icon.png": "/coin_tracker_client/static/media/Brand-icon.651547a97f4f41baf53a.png",
     "index.html": "/coin_tracker_client/index.html",
-    "main.318a425f.css.map": "/coin_tracker_client/static/css/main.318a425f.css.map",
-    "main.84901af5.js.map": "/coin_tracker_client/static/js/main.84901af5.js.map",
+    "main.7c26372e.css.map": "/coin_tracker_client/static/css/main.7c26372e.css.map",
+    "main.1c99019a.js.map": "/coin_tracker_client/static/js/main.1c99019a.js.map",
     "787.81a31bec.chunk.js.map": "/coin_tracker_client/static/js/787.81a31bec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.318a425f.css",
-    "static/js/main.84901af5.js"
+    "static/css/main.7c26372e.css",
+    "static/js/main.1c99019a.js"
   ]
 }
