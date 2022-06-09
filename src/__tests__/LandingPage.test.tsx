@@ -14,19 +14,9 @@ const renderLandingPage = () => {
 };
 
 describe('Landing Page', () => {
-  test('contains navbar', () => {
-    renderLandingPage();
-    const brandIcon = screen.getByAltText('brand icon');
-    expect(brandIcon).toBeInTheDocument();
-    const signUp = screen.getByText('sign up');
-    expect(signUp).toBeInTheDocument();
-    const login = screen.getByText('login');
-    expect(login).toBeInTheDocument();
-  });
-
   test('contains header and description', () => {
     renderLandingPage();
-    const headerText = screen.getByText('Coin Tracker');
+    const headerText = screen.getByRole('heading', { name: 'Coin Tracker' });
     expect(headerText).toBeInTheDocument();
     const descriptionText = screen.getByText(
       'State of the art technologies to track your defi portfolio'
