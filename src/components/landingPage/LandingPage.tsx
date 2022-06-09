@@ -7,9 +7,6 @@ import bitcoin from './assets/Bitcoin.png';
 import ethereum from './assets/Ethereum.png';
 import dashboard from './assets/Dashboard.png';
 
-// TODO change the css selector for signup anchor tag (showing incorrectly on gh)
-// TODO create module for navbar
-
 function LandingPage(): JSX.Element {
   return (
     <main className='landing-page'>
@@ -32,7 +29,6 @@ function LandingPage(): JSX.Element {
             alt='ethereum icon'
           />
         </div>
-        {/* <button className='sign-up-button'>Sign Up</button> */}
       </div>
     </main>
   );

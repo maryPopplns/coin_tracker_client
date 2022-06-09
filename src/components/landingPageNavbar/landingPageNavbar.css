@@ -29,6 +29,6 @@ header div a {
 header div a:hover {
   background-color: rgba(105, 105, 105, 0.2);
 }
-header a[href='/signup'] {
+.signup-link {
   margin-right: 1rem;
 }

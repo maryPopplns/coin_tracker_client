@@ -10,7 +10,9 @@ function LandingPageNavbar(): JSX.Element {
         <img className='brand-icon' src={brandIcon} alt='brand icon' />
       </Link>
       <div>
-        <Link to='/signup'>sign up</Link>
+        <Link className='signup-link' to='/signup'>
+          sign up
+        </Link>
         <Link to='/login'>login</Link>
       </div>
     </header>
