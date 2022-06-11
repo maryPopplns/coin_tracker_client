@@ -68,6 +68,24 @@
   text-indent: 0.25rem;
 }
 
+.signup-submit-button {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 1.5rem;
+  font-family: roboto-medium;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 1.5rem;
+}
+.signup-submit-button:hover {
+  border: 2px solid black;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.singup-error {
+  border: 2px solid red;
+}
+
 @media (min-width: 1000px) {
   .signup-form h2 {
     font-size: 4.5rem;

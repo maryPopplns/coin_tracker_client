@@ -1,30 +1,45 @@
 import './signup.css';
-import LandingPageNavbar from '../landingPageNavbar/LandingPageNavbar';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import LandingPageNavbar from '../landingPageNavbar/LandingPageNavbar';
 
 function Signup(): JSX.Element {
   const [username, setUsername] = useState<string>('');
   const [password, setPassword] = useState<string>('');
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isError, setIsError] = useState<boolean>(false);
 
-  async function formHandler(event: React.SyntheticEvent) {
+  const navigate = useNavigate();
+
+  function formHandler(event: React.SyntheticEvent) {
     event.preventDefault();
+
+    setIsLoading(true);
 
     const data = new URLSearchParams(
       Object.entries({ username, password })
     ).toString();
 
-    const response = await fetch(
-      'https://cryptosolutions.herokuapp.com/register',
-      {
-        method: 'POST',
-        body: data,
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-      }
-    );
-    const toJSON = await response.json();
-    console.log(toJSON);
+    fetch('https://cryptosolutions.herokuapp.com/register', {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        console.log(response);
+        if (response.status === 'success') {
+          return navigate('/login');
+        } else {
+          setIsError(true);
+          setTimeout(() => {
+            setIsLoading(false);
+            setIsError(false);
+          }, 3000);
+        }
+      });
   }
 
   return (
@@ -53,8 +68,12 @@ function Signup(): JSX.Element {
               id='signup-password'
             ></input>
           </div>
-          {/* TODO create spinner for when submit had been clicked */}
-          <button>submit</button>
+          <button
+            className={`signup-submit-button${isError ? ' singup-error' : ''}`}
+            disabled={isLoading}
+          >
+            submit
+          </button>
         </form>
       </div>
     </main>
