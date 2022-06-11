@@ -9,3 +9,7 @@ main.signup-page {
     #ffcc70 100%
   );
 }
+
+.signup-form {
+  display: fixed;
+}
