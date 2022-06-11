@@ -1,4 +1,25 @@
-main.signup-page {
+@font-face {
+  font-family: 'roboto-black';
+  src: url('../../fonts/Roboto-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('../../fonts/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'roboto-light';
+  src: url('../../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+.signup-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 3rem);
+  width: 100vw;
+}
+
+.signup-page {
   min-height: 100vh;
   width: 100vw;
   background-color: #4158d0;
@@ -11,5 +32,50 @@ main.signup-page {
 }
 
 .signup-form {
-  display: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+}
+
+.signup-form h2 {
+  font-family: roboto-black;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.signup-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-page label {
+  margin-bottom: 0.25rem;
+  margin-top: 1rem;
+  font-family: roboto-medium;
+}
+
+.signup-page input {
+  height: 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-indent: 0.25rem;
+}
+
+@media (min-width: 1000px) {
+  .signup-form h2 {
+    font-size: 4.5rem;
+  }
+  .signup-page label {
+    font-size: 1.5rem;
+  }
+  .signup-page input {
+    width: 12rem;
+  }
 }
