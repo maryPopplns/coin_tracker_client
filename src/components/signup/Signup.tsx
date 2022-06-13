@@ -26,20 +26,17 @@ function Signup(): JSX.Element {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-    })
-      .then((response) => response.json())
-      .then((response) => {
-        console.log(response);
-        if (response.status === 'success') {
-          return navigate('/login');
-        } else {
-          setIsError(true);
-          setTimeout(() => {
-            setIsLoading(false);
-            setIsError(false);
-          }, 3000);
-        }
-      });
+    }).then((response) => {
+      if (response.status === 201) {
+        return navigate('/login');
+      } else {
+        setIsError(true);
+        setTimeout(() => {
+          setIsLoading(false);
+          setIsError(false);
+        }, 3000);
+      }
+    });
   }
 
   return (
