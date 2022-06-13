@@ -118,5 +118,11 @@ describe('signup form', () => {
     await waitFor(() => {
       expect(submitButton).toHaveClass('singup-error');
     });
+    await waitFor(
+      () => {
+        expect(submitButton).not.toHaveClass('singup-error');
+      },
+      { timeout: 5000 }
+    );
   });
 });
